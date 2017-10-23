@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimpleBitcoinSender": {
+      "commandName": "Project",
+      "commandLineArgs": "mrGwfqYjuBZmpBWGrpAj7tVJUgFfeVVqij 0ab3d1f3ff387d4952cbc627023643740e3072781a0a60eb198f652418c4d600 0.5"
+    }
+  }
+}
