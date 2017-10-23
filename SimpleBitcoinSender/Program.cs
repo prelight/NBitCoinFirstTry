@@ -14,9 +14,9 @@ namespace SimpleBitcoinSender
     {
         static void Main(string[] args)
         {
-            //コマンドライン引数から取得
-            SenderInfo.TargetTxID = args[0];            //送信対象のtransaction id
-            SenderInfo.TargetBtcAddress = args[1];      //送信対象のBitcoin address
+            //コマンドライン引数から送信情報取得
+            SenderInfo.TargetBtcAddress = args[0];      //送信対象のBitcoin address
+            SenderInfo.TargetTxID = args[1];            //送信対象のtransaction id
             SenderInfo.Coin = decimal.Parse(args[2]);   //BTC
 
             //ファイル(key.txt)からprivate key取得
@@ -135,12 +135,12 @@ namespace SimpleBitcoinSender
 
             return outPointToSpend;
         }
-    }
 
-    class SenderInfo
-    {
-        public static string TargetTxID { get; set; }
-        public static string TargetBtcAddress { get; set; }
-        public static decimal Coin { get; set; }
+        class SenderInfo
+        {
+            public static string TargetTxID { get; set; }
+            public static string TargetBtcAddress { get; set; }
+            public static decimal Coin { get; set; }
+        }
     }
 }
