@@ -9,7 +9,7 @@ using System.Text;
 namespace SimpleBitcoinSender
 {
     //参考にしたサイト：https://programmingblockchain.gitbooks.io/programmingblockchain-japanese/content/
-    //勉強用の為、例外処理とかはなく最低限のソースコードになっている
+    //勉強用の為、クラスや例外処理とかはなく最低限のソースコードになっている
     class Program
     {
         static void Main(string[] args)
